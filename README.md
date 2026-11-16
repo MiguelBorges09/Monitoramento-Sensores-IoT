@@ -6,8 +6,7 @@ Sistema em Java que simula sensores de temperatura, umidade e presença, verific
 
 ## Diagramas UML
 
-- [UML digitalizado atualizado](docs/uml-digitalizado.pdf)
-- [Desenho original feito à mão](docs/uml-manuscrito.jpeg)
+- UML inicial feito a mão e UML digitalizado adiconados na pasta "docs"
 
 ## Integrantes — Grupo 12
 
