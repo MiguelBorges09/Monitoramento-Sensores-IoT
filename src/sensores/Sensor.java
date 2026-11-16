@@ -11,8 +11,16 @@ public abstract class Sensor implements Alertavel {
     private boolean ligado;
 
     protected Sensor(String id, String local) {
-        this.id = id;
-        this.local = local;
+        if (id == null || id.isBlank()) {
+            throw new IllegalArgumentException("O ID é obrigatório.");
+        }
+
+        if (id.contains(";") || id.contains("\n") || id.contains("\r")) {
+            throw new IllegalArgumentException("O ID não pode conter ponto e vírgula ou quebra de linha.");
+        }
+
+        this.id = id.trim();
+        setLocal(local);
         this.ligado = true;
     }
 
@@ -22,6 +30,15 @@ public abstract class Sensor implements Alertavel {
 
     public String getLocal() {
         return local;
+    }
+
+    public void setLocal(String local) {
+
+        if (local == null || local.isBlank()) {
+            throw new IllegalArgumentException("O local é obrigatório.");
+        }
+
+        this.local = local.trim();
     }
 
     public boolean isLigado() {
@@ -39,7 +56,7 @@ public abstract class Sensor implements Alertavel {
     protected void verificarLigado() throws SensorDesligado {
 
         if (!ligado) {
-            throw new SensorDesligado("O sensor " + id + " está desligado.");
+            throw new SensorDesligado("O sensor " + id + " tá desligado.");
         }
     }
 

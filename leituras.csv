@@ -1,0 +1,10 @@
+idSensor;valor;unidade;alerta
+T01;24.330981640808155;°C;false
+U01;37.11248382095134;%;false
+P01;0.0;presença (0/1);false
+T01;22.738181452771258;°C;false
+U01;66.23465258269677;%;false
+P01;0.0;presença (0/1);false
+T01;29.18706450394975;°C;false
+U01;53.793173505629454;%;false
+P01;0.0;presença (0/1);false
