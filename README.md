@@ -4,13 +4,16 @@ Projeto final de C06 — Programação Orientada a Objetos.
 
 Sistema em Java que simula sensores de temperatura, umidade e presença, verifica alertas e salva o histórico das leituras em arquivo CSV.
 
+## Diagramas UML
+
+- [UML digitalizado atualizado](docs/uml-digitalizado.pdf)
+- [Desenho original feito à mão](docs/uml-manuscrito.jpeg)
+
 ## Integrantes — Grupo 12
 
 - Ygor Silva Costa - Computação - 2355 
 - Miguel Borges Magalhães - Software - 978
 - Igor Gabriel Porto Vidal - Software - 864
-
-
 
 ## Uso de IA
 
